@@ -1,990 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Din Muhammad Group Of Companies - Pvt Ltd | Real Estate & Construction in
+      Multan
+    </title>
     <meta
       name="description"
-      content="Din Muhammad Group of Companies (Pvt) Ltd delivers trusted real estate, construction, development, marketing, and investment services in Pakistan."
+      content="Din Muhammad Group Of Companies - Pvt Ltd offers real estate consultation, property buying and selling support, construction guidance, project marketing, and development advisory in Multan, South Punjab, and Islamabad."
     />
-    <meta name="author" content="Din Muhammad Group of Companies (Pvt) Ltd" />
     <meta
       name="keywords"
-      content="Din Muhammad Group, DMG, Real Estate, Construction, Property Development, Pakistan"
+      content="Din Muhammad Group Of Companies - Pvt Ltd, Din Muhammad Group, real estate company Multan, property dealer Multan, construction company Multan, project marketing Multan, real estate South Punjab, property investment Islamabad, buy property Multan, sell property Multan"
     />
-    <meta property="og:title" content="Din Muhammad Group of Companies (Pvt) Ltd" />
+    <meta name="author" content="Din Muhammad Group Of Companies - Pvt Ltd" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#432b1b" />
+    <meta name="geo.region" content="PK-PB" />
+    <meta name="geo.placename" content="Multan" />
+    <meta name="geo.position" content="30.1575;71.5249" />
+    <meta name="ICBM" content="30.1575, 71.5249" />
+    <meta property="og:locale" content="en_PK" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Din Muhammad Group Of Companies - Pvt Ltd | Real Estate & Construction in Multan"
+    />
     <meta
       property="og:description"
-      content="Real estate and construction services for buyers, investors, developers, and families."
+      content="Property consultation, construction guidance, project marketing, and development support for clients in Multan, South Punjab, and Islamabad."
     />
     <meta property="og:url" content="https://dinmuhammadgroup.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://dinmuhammadgroup.com/images/din-muhammad-group-logo.jpeg" />
-
-    <title>Din Muhammad Group of Companies (Pvt) Ltd</title>
-
-    <link rel="icon" href="images/din-muhammad-group-logo.jpeg" type="image/jpeg" />
+    <meta property="og:site_name" content="Din Muhammad Group Of Companies - Pvt Ltd" />
+    <meta
+      property="og:image"
+      content="https://dinmuhammadgroup.com/images/din-muhammad-group-logo.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Din Muhammad Group Of Companies - Pvt Ltd | Real Estate & Construction in Multan"
+    />
+    <meta
+      name="twitter:description"
+      content="Real estate support, construction guidance, and project marketing in Multan, South Punjab, and Islamabad."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dinmuhammadgroup.com/images/din-muhammad-group-logo.jpeg"
+    />
     <link rel="canonical" href="https://dinmuhammadgroup.com/" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
-
-    <style>
-      :root {
-        --navy: #022b3a;
-        --deep: #031e2b;
-        --panel: #06445c;
-        --panel-soft: #0a536f;
-        --gold: #d9a32f;
-        --gold-light: #f3d58a;
-        --white: #ffffff;
-        --muted: rgba(255, 255, 255, 0.78);
-        --line: rgba(255, 255, 255, 0.12);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        color: var(--white);
-        background: var(--deep);
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      img {
-        display: block;
-        max-width: 100%;
-      }
-
-      .navbar {
-        min-height: 78px;
-        background: rgba(2, 43, 58, 0.97);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .navbar-brand {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        color: var(--white);
-        font-weight: 800;
-      }
-
-      .brand-logo {
-        width: 72px;
-        height: 50px;
-        object-fit: contain;
-      }
-
-      .brand-text {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.1;
-      }
-
-      .brand-text small {
-        color: var(--gold-light);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .nav-link {
-        color: var(--white);
-        font-weight: 700;
-        padding: 0.7rem 1rem !important;
-      }
-
-      .nav-link:hover,
-      .nav-link:focus {
-        color: var(--gold-light);
-      }
-
-      .navbar-toggler {
-        border-color: rgba(255, 255, 255, 0.35);
-      }
-
-      .navbar-toggler-icon {
-        filter: invert(1);
-      }
-
-      .btn-dmg {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.55rem;
-        min-height: 48px;
-        padding: 0.75rem 1.2rem;
-        color: var(--deep);
-        background: var(--white);
-        border: 0;
-        border-radius: 999px;
-        font-weight: 800;
-      }
-
-      .btn-dmg i {
-        width: 36px;
-        height: 36px;
-        display: grid;
-        place-items: center;
-        color: var(--white);
-        background: #4b82f5;
-        border-radius: 50%;
-        font-size: 1.35rem;
-      }
-
-      .btn-gold {
-        color: var(--deep);
-        background: linear-gradient(135deg, var(--gold-light), var(--gold));
-      }
-
-      .notice-bar {
-        display: flex;
-        gap: 3rem;
-        overflow: hidden;
-        white-space: nowrap;
-        color: var(--deep);
-        background: linear-gradient(90deg, var(--gold-light), var(--gold));
-        font-weight: 700;
-        padding: 0.28rem 0;
-      }
-
-      .notice-bar span {
-        animation: ticker 22s linear infinite;
-      }
-
-      @keyframes ticker {
-        from {
-          transform: translateX(0);
-        }
-
-        to {
-          transform: translateX(-100%);
-        }
-      }
-
-      .hero {
-        min-height: calc(100vh - 106px);
-        display: grid;
-        place-items: center;
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-        background:
-          linear-gradient(rgba(2, 43, 58, 0.72), rgba(2, 43, 58, 0.76)),
-          url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1900&q=82")
-            center / cover no-repeat;
-      }
-
-      .hero-content {
-        width: min(1000px, calc(100% - 32px));
-        padding: 6rem 0;
-      }
-
-      .eyebrow {
-        color: var(--gold-light);
-        font-size: 0.82rem;
-        font-weight: 900;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
-
-      h1,
-      h2,
-      h3,
-      p {
-        margin-top: 0;
-      }
-
-      .hero h1 {
-        margin: 0.85rem auto 1rem;
-        font-size: clamp(2.4rem, 6vw, 5.4rem);
-        font-weight: 900;
-        line-height: 1.02;
-        max-width: 930px;
-      }
-
-      .hero h1 span,
-      .gold-text {
-        color: var(--gold);
-      }
-
-      .hero p {
-        max-width: 760px;
-        margin: 0 auto 1.8rem;
-        color: var(--muted);
-        font-size: 1.08rem;
-      }
-
-      .hero-metrics {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1px;
-        width: min(980px, calc(100% - 32px));
-        margin: 3.2rem auto 0;
-        overflow: hidden;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--line);
-      }
-
-      .metric {
-        padding: 1.25rem;
-        background: rgba(3, 30, 43, 0.82);
-      }
-
-      .metric strong {
-        display: block;
-        color: var(--gold-light);
-        font-size: 1.8rem;
-        font-weight: 900;
-      }
-
-      .metric span {
-        color: var(--muted);
-        font-weight: 700;
-      }
-
-      section {
-        padding: 5.5rem 0;
-      }
-
-      .section-title {
-        max-width: 780px;
-        margin: 0 auto 2.8rem;
-        text-align: center;
-      }
-
-      .section-title h2 {
-        margin: 0.5rem 0 0.7rem;
-        font-size: clamp(2rem, 4vw, 3.6rem);
-        font-weight: 900;
-        line-height: 1.1;
-      }
-
-      .section-title p {
-        color: var(--muted);
-        margin-bottom: 0;
-      }
-
-      .split-section {
-        background: var(--deep);
-      }
-
-      .project-shot {
-        min-height: 360px;
-        border-radius: 8px;
-        background:
-          linear-gradient(rgba(2, 43, 58, 0.1), rgba(2, 43, 58, 0.1)),
-          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=82")
-            center / cover no-repeat;
-      }
-
-      .large-copy {
-        font-size: clamp(2rem, 4vw, 3.35rem);
-        font-weight: 900;
-        line-height: 1.12;
-      }
-
-      .card-panel {
-        height: 100%;
-        padding: 1.65rem;
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
-      }
-
-      .card-panel p {
-        color: var(--muted);
-        margin-bottom: 0;
-      }
-
-      .icon-circle {
-        width: 70px;
-        height: 70px;
-        display: grid;
-        place-items: center;
-        margin-bottom: 1.4rem;
-        color: var(--white);
-        background: #4b82f5;
-        border-radius: 50%;
-        font-size: 2rem;
-      }
-
-      .services {
-        background: var(--navy);
-      }
-
-      .service-card h3 {
-        margin-bottom: 0.65rem;
-        font-size: 1.25rem;
-        font-weight: 900;
-      }
-
-      .feature-banner {
-        min-height: 570px;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        background:
-          linear-gradient(rgba(2, 43, 58, 0.14), rgba(2, 43, 58, 0.2)),
-          url("https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1900&q=84")
-            center / cover no-repeat;
-      }
-
-      .feature-box {
-        width: min(440px, calc(100% - 32px));
-        padding: 2rem;
-        background: rgba(3, 30, 43, 0.72);
-        border-radius: 8px;
-        backdrop-filter: blur(3px);
-      }
-
-      .feature-logo {
-        width: 145px;
-        height: 145px;
-        object-fit: cover;
-        margin: 0 auto 1.4rem;
-        border: 2px solid rgba(217, 163, 47, 0.65);
-        border-radius: 50%;
-      }
-
-      .tool-card {
-        min-height: 118px;
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-        padding: 1.4rem;
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        transition: transform 0.2s ease, background 0.2s ease;
-      }
-
-      .tool-card:hover {
-        transform: translateY(-4px);
-        background: var(--panel-soft);
-      }
-
-      .tool-card h3 {
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 900;
-      }
-
-      .contact-section {
-        background:
-          linear-gradient(90deg, rgba(3, 30, 43, 0.94), rgba(3, 30, 43, 0.82)),
-          url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=82")
-            center / cover no-repeat;
-      }
-
-      .contact-box {
-        height: 100%;
-        padding: 2rem;
-        background: rgba(6, 68, 92, 0.86);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-      }
-
-      .contact-list {
-        list-style: none;
-        padding: 0;
-        margin: 1.4rem 0 0;
-      }
-
-      .contact-list li {
-        display: flex;
-        gap: 0.75rem;
-        margin-top: 0.85rem;
-        color: var(--muted);
-      }
-
-      .form-control,
-      .form-select {
-        min-height: 50px;
-        color: var(--white);
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 6px;
-      }
-
-      .form-control::placeholder {
-        color: rgba(255, 255, 255, 0.6);
-      }
-
-      .form-control:focus,
-      .form-select:focus {
-        color: var(--white);
-        background: rgba(255, 255, 255, 0.12);
-        border-color: var(--gold);
-        box-shadow: 0 0 0 0.2rem rgba(217, 163, 47, 0.18);
-      }
-
-      footer {
-        padding: 4.5rem 0 2rem;
-        background: linear-gradient(120deg, #078bc3, #06445c 45%, #043144);
-      }
-
-      .footer-logo {
-        width: 180px;
-        max-height: 150px;
-        object-fit: contain;
-      }
-
-      .footer-title {
-        color: var(--white);
-        font-size: 1.05rem;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
-
-      .footer-links {
-        list-style: none;
-        padding: 0;
-        margin: 1rem 0 0;
-      }
-
-      .footer-links li {
-        margin-bottom: 0.55rem;
-      }
-
-      .footer-links a,
-      .footer-links span {
-        color: rgba(255, 255, 255, 0.88);
-      }
-
-      .footer-bottom {
-        margin-top: 3.5rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid rgba(217, 163, 47, 0.7);
-        text-align: center;
-      }
-
-      .social-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-      }
-
-      .social-row a {
-        width: 44px;
-        height: 44px;
-        display: grid;
-        place-items: center;
-        color: var(--deep);
-        background: linear-gradient(135deg, var(--gold-light), var(--gold));
-        border-radius: 50%;
-        font-size: 1.25rem;
-      }
-
-      .floating-actions {
-        position: fixed;
-        right: 1.25rem;
-        bottom: 1.25rem;
-        z-index: 30;
-        display: grid;
-        gap: 0.75rem;
-      }
-
-      .float-btn {
-        width: 60px;
-        height: 60px;
-        display: grid;
-        place-items: center;
-        color: var(--white);
-        border-radius: 50%;
-        font-size: 1.8rem;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
-      }
-
-      .whatsapp {
-        background: #19d365;
-      }
-
-      .to-top {
-        background: #0b76df;
-      }
-
-      @media (max-width: 991px) {
-        .navbar {
-          min-height: auto;
-        }
-
-        .hero-metrics {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .feature-banner {
-          min-height: 460px;
-        }
-      }
-
-      @media (max-width: 575px) {
-        .brand-text {
-          display: none;
-        }
-
-        .brand-logo {
-          width: 62px;
-        }
-
-        .notice-bar {
-          font-size: 0.88rem;
-        }
-
-        .hero {
-          min-height: auto;
-        }
-
-        .hero-content {
-          padding: 4.5rem 0;
-        }
-
-        .hero-metrics {
-          grid-template-columns: 1fr;
-        }
-
-        section {
-          padding: 4rem 0;
-        }
-
-        .floating-actions {
-          right: 0.85rem;
-        }
-      }
-    </style>
+    <link rel="icon" type="image/jpeg" href="/images/din-muhammad-group-logo.jpeg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Din Muhammad Group Of Companies - Pvt Ltd",
+        "url": "https://dinmuhammadgroup.com/",
+        "logo": "https://dinmuhammadgroup.com/images/din-muhammad-group-logo.jpeg",
+        "image": "https://dinmuhammadgroup.com/images/din-muhammad-group-logo.jpeg",
+        "description": "Din Muhammad Group Of Companies - Pvt Ltd provides real estate consultation, property buying and selling support, construction guidance, project marketing, and development advisory in Multan, South Punjab, and Islamabad.",
+        "email": "dinmuhammadgroup@gmail.com",
+        "telephone": "+92 300 2008086",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Multan public school Road Near Multan cafe stop",
+          "addressLocality": "Multan",
+          "addressRegion": "Punjab",
+          "postalCode": "60700",
+          "addressCountry": "PK"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Multan"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "South Punjab"
+          },
+          {
+            "@type": "City",
+            "name": "Islamabad"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61564917804114"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+92 300 2008086",
+            "email": "dinmuhammadgroup@gmail.com",
+            "areaServed": "PK",
+            "availableLanguage": ["en", "ur"]
+          }
+        ]
+      }
+    </script>
   </head>
-
-  <body id="top">
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid px-lg-4">
-        <a class="navbar-brand" href="https://dinmuhammadgroup.com/">
-          <img
-            class="brand-logo"
-            src="images/din-muhammad-group-logo.jpeg"
-            alt="Din Muhammad Group logo"
-          />
-          <span class="brand-text">
-            Din Muhammad Group
-            <small>Companies (Pvt) Ltd</small>
-          </span>
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tools">Resources</a></li>
-            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-              <a class="btn-dmg" href="#contact"><i class="bi-arrow-right"></i>Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="notice-bar" aria-label="Company highlights">
-      <span>Build your future with Din Muhammad Group.</span>
-      <span>Real estate, construction, development, and project marketing.</span>
-      <span>Visit https://dinmuhammadgroup.com/ for company updates.</span>
-      <span>Trusted property guidance for families and investors.</span>
-    </div>
-
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <span class="eyebrow">Real estate and construction</span>
-          <h1>Step Into The Future With <span>Din Muhammad Group</span></h1>
-          <p>
-            Din Muhammad Group of Companies (Pvt) Ltd brings together property
-            acquisition, construction, development, marketing, and investment
-            guidance under one trusted name.
-          </p>
-          <div class="d-flex flex-wrap gap-3 justify-content-center">
-            <a class="btn-dmg" href="#contact"><i class="bi-telephone"></i>Book A Call</a>
-            <a class="btn-dmg btn-gold" href="#projects"><i class="bi-buildings"></i>Explore Projects</a>
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric">
-              <strong>DMG</strong>
-              <span>Group identity</span>
-            </div>
-            <div class="metric">
-              <strong>360</strong>
-              <span>Real estate services</span>
-            </div>
-            <div class="metric">
-              <strong>24/7</strong>
-              <span>Client support</span>
-            </div>
-            <div class="metric">
-              <strong>Pvt Ltd</strong>
-              <span>Company structure</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="split-section">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-              <div class="project-shot" role="img" aria-label="Modern real estate project"></div>
-            </div>
-            <div class="col-lg-6">
-              <span class="eyebrow">Our story</span>
-              <h2 class="large-copy">
-                Each project unfolds the boundless story of
-                <span class="gold-text">Din Muhammad Group.</span>
-              </h2>
-              <p class="mt-3 text-white-50">
-                We help clients make confident property decisions through market
-                insight, practical construction knowledge, and clear guidance
-                from the first meeting to final handover.
-              </p>
-              <a class="btn-dmg mt-3" href="#contact"><i class="bi-arrow-right"></i>Reach Us Here</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="services">
-        <div class="container">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-5">
-              <span class="eyebrow">One-stop property partner</span>
-              <h2 class="large-copy">
-                Overseeing every facet of the
-                <span class="gold-text">real estate journey.</span>
-              </h2>
-              <p class="text-white-50">
-                Whether you are planning a home, commercial space, investment,
-                or development project, our team gives you a practical route
-                forward.
-              </p>
-            </div>
-            <div class="col-lg-7">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <article class="card-panel">
-                    <div
-                      style="
-                        height: 190px;
-                        margin: -1.65rem -1.65rem 1.35rem;
-                        border-radius: 8px 8px 0 0;
-                        background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=82') center / cover;
-                      "
-                    ></div>
-                    <h3>Our Legacy</h3>
-                    <p>Rooted in trust, rising with pride across Pakistan's property landscape.</p>
-                  </article>
-                </div>
-                <div class="col-md-6">
-                  <article class="card-panel">
-                    <div
-                      style="
-                        height: 190px;
-                        margin: -1.65rem -1.65rem 1.35rem;
-                        border-radius: 8px 8px 0 0;
-                        background: linear-gradient(135deg, #0d4a8f, #2d5aa0);
-                      "
-                    ></div>
-                    <h3>Our Services</h3>
-                    <p>Acquisition, construction, marketing, consultation, and end-to-end support.</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-title">
-            <span class="eyebrow">Services</span>
-            <h2>Consulting, construction, and project growth.</h2>
-            <p>
-              DMG supports property owners, builders, and investors with
-              services that cover the full project lifecycle.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-map"></i></div>
-                <h3>Land Acquisition</h3>
-                <p>Identify strong locations, review potential, and secure property opportunities.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-building"></i></div>
-                <h3>Development</h3>
-                <p>Plan layouts, coordinate teams, and shape smart residential or commercial projects.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-signpost-split"></i></div>
-                <h3>Plots Trading</h3>
-                <p>Connect buyers and sellers with clear guidance, fair pricing, and local insight.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-hammer"></i></div>
-                <h3>Construction</h3>
-                <p>Supervise quality site work, material planning, structure, finishing, and handover.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-bricks"></i></div>
-                <h3>Finishing Materials</h3>
-                <p>Support selections that balance durability, aesthetics, budget, and delivery time.</p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card-panel service-card">
-                <div class="icon-circle"><i class="bi-megaphone"></i></div>
-                <h3>Project Marketing</h3>
-                <p>Position property projects with practical campaigns, buyer outreach, and launch plans.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="feature-banner">
-        <div class="feature-box">
-          <img
-            class="feature-logo"
-            src="images/din-muhammad-group-logo.jpeg"
-            alt="DMG emblem"
-          />
-          <a class="btn-dmg" href="#about"><i class="bi-arrow-right"></i>Tell me More</a>
-        </div>
-      </section>
-
-      <section id="tools" class="services">
-        <div class="container">
-          <div class="section-title">
-            <span class="eyebrow">Resources</span>
-            <h2>Explore more on <span class="gold-text">Din Muhammad Group</span></h2>
-            <p>
-              Add calculators, maps, forms, and property finder tools here as
-              your website grows.
-            </p>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="#contact">
-                <span class="icon-circle mb-0"><i class="bi-calculator"></i></span>
-                <h3>Area Unit Converter</h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="#contact">
-                <span class="icon-circle mb-0"><i class="bi-map"></i></span>
-                <h3>Project Maps</h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="#contact">
-                <span class="icon-circle mb-0"><i class="bi-truck"></i></span>
-                <h3>Construction Cost Calculator</h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="#contact">
-                <span class="icon-circle mb-0"><i class="bi-receipt"></i></span>
-                <h3>Unit Price Calculator</h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="#contact">
-                <span class="icon-circle mb-0"><i class="bi-search"></i></span>
-                <h3>Property Finder</h3>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a class="tool-card" href="https://dinmuhammadgroup.com/">
-                <span class="icon-circle mb-0"><i class="bi-globe"></i></span>
-                <h3>Official Website</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-lg-5">
-              <div class="contact-box">
-                <span class="eyebrow">Contact</span>
-                <h2 class="large-copy">Start your next property conversation.</h2>
-                <p class="text-white-50">
-                  Tell us whether you want to buy, sell, construct, market, or
-                  discuss an investment. Our team will guide the next step.
-                </p>
-                <ul class="contact-list">
-                  <li><i class="bi-globe"></i><span>https://dinmuhammadgroup.com/</span></li>
-                  <li><i class="bi-telephone"></i><span>+92 300 2008086</span></li>
-                  <li>
-                    <i class="bi-geo-alt"></i>
-                    <span>Multan Public School Road Near Multan Cafe Stop, Multan, Pakistan, 60700</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="contact-box">
-                <form class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-control" id="name" type="text" placeholder="Your name" />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="phone">Phone</label>
-                    <input class="form-control" id="phone" type="tel" placeholder="+92..." />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="service">Service</label>
-                    <select class="form-select" id="service">
-                      <option>Buy property</option>
-                      <option>Sell property</option>
-                      <option>Construction</option>
-                      <option>Project marketing</option>
-                      <option>Investment consultation</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label" for="budget">Budget</label>
-                    <input class="form-control" id="budget" type="text" placeholder="Example: 80 lac" />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label" for="message">Requirement</label>
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      rows="5"
-                      placeholder="Tell us the location, plot size, project type, or construction need"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn-dmg btn-gold" type="submit">
-                      <i class="bi-send"></i>Send Inquiry
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <img
-              class="footer-logo"
-              src="images/din-muhammad-group-logo.jpeg"
-              alt="Din Muhammad Group logo"
-            />
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="footer-title">Company</h3>
-            <ul class="footer-links">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="footer-title">Resources</h3>
-            <ul class="footer-links">
-              <li><a href="#tools">Area Unit Converter</a></li>
-              <li><a href="#tools">Construction Cost Calculator</a></li>
-              <li><a href="#tools">Property Finder</a></li>
-              <li><a href="https://dinmuhammadgroup.com/">Official Website</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h3 class="footer-title">Contact</h3>
-            <ul class="footer-links">
-              <li><span><i class="bi-globe me-2"></i>dinmuhammadgroup.com</span></li>
-              <li><span><i class="bi-telephone me-2"></i>+92 300 2008086</span></li>
-              <li>
-                <span>
-                  <i class="bi-geo-alt me-2"></i>Multan Public School Road Near Multan Cafe Stop, Multan, Pakistan, 60700
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="social-row">
-            <a href="#" aria-label="Facebook"><i class="bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi-linkedin"></i></a>
-            <a href="#" aria-label="YouTube"><i class="bi-youtube"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="bi-whatsapp"></i></a>
-          </div>
-          <p class="mb-0">
-            Copyright 2026 Din Muhammad Group of Companies (Pvt) Ltd. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <div class="floating-actions">
-      <a class="float-btn whatsapp" href="https://wa.me/923002008086" aria-label="WhatsApp">
-        <i class="bi-whatsapp"></i>
-      </a>
-      <a class="float-btn to-top" href="#top" aria-label="Back to top">
-        <i class="bi-arrow-up"></i>
-      </a>
-    </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
